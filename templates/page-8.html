@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 8</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+
+      <div class="left_area" style="display: flex;">
+        <h3>Boticx <span>Lab</span></h3>
+        <h2>Face Recognition</h2>
+      </div>
+      <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <ul id="myUL">
+        <li>BoticX Technology</li>
+        <li>VISION<span class="caret"></span>
+          <ul class="nested">
+            <a href="/vision/face"><i class=""></i><span>Face Recognition</span></a>
+            <a href="/vision/object_detection"><i class=""></i><span>Object Detection</span></a>
+            <a href="/train2"><i class=""></i><span>Distance Calculation</span></a>
+            <a href="/train3"><i class=""></i><span>Gesture Detection</span></a>
+            <a href="/train1"><i class=""></i><span>Cropping</span></a>
+            <a href="/train2"><i class=""></i><span>Landmark Detection</span></a>
+            <a href="/train3"><i class=""></i><span>Logo Recognition</span></a>
+            <a href="/train1"><i class=""></i><span>Image Segmentation</span></a>
+            <a href="/train2"><i class=""></i><span>Croud Counting</span></a>
+            <a href="/train3"><i class=""></i><span>Person Counting</span></a>
+            <a href="/train1"><i class=""></i><span>Scne Detection</span></a> 
+          </ul>
+        </li>
+        <li>NLP<span class="caret"></span>
+          <ul class="nested">
+            <a href="/chatbot"><i class=""></i><span>Chatbot</span></a>
+            <a href="/paragraph"><i class=""></i><span>Paragraph Q&A</span></a>
+            <a href="/stt"><i class=""></i><span>Speach To Text</span></a>
+            <a href="/tts"><i class=""></i><span>Text To Speach</span></a>
+            <a href="/sentiment"><i class=""></i><span>Sentiment Analysis</span></a>
+          </ul>
+        </li>
+        <li>GARUDA UAV<span class="caret"></span>
+          <ul class="nested">
+            <a href="/garuda/solar"><i class=""></i><span>Solar Plant</span></a>
+            <a href="/garuda/transmission"><i class=""></i><span>Transmission Line</span></a>
+            <a href="/garuda/highway"><i class=""></i><span>HAIGHWAY</span></a>
+            <a href="/garuda/warehouse"><i class=""></i><span>Warehouse</span></a>
+          </ul>
+        </li>
+        <li>NOTEBOOK<span class="caret"></span>
+          <ul class="nested">
+            <a href="/notebook"><i class=""></i><span>Jupuyter Notebook</span></a>
+          </ul>
+        </li>
+        <li>ANNOTATION TOOL<span class="caret"></span>
+          <ul class="nested">
+            <a href="/label"><i class=""></i><span>ANNOTATION TOOL</span></a>
+          </ul>
+        </li>
+      </ul>  
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+      <div class="row pt-5">
+        <div class="col-md-6 col-lg-3 col-sm-12 col-xs-12 mb-sm-2 card-gap">
+          <div class="card my-card" style="height: 250px; border: none; background-color: #C11B17;"></div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 mb-sm-2 card-gap">
+          <div class="card my-card" style="height: 250px; background-color: #151B54;">
+            <div class="card-body pt-2">
+              <div class="upload-file">
+                <h6 class=""><span class="font-style">Data Name:1</span><span class="font-style" style="margin-left: 205px;">Add image</span></h6>
+              </div>
+              <hr class="hr-line">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="ex2">Camera Display</div>
+                      <button type="submit" id="AddNewUserOtpModal" style="height: 28px;width: 100px; margin-top: 10px; margin-left: 15px; background-color: #C11B17">Click</button>
+                    </div>
+                  <div class="col">
+                    <div class="row" style="margin-top: 0px;">
+                      <div class="picr">
+                        <button class="photo" type="submit">Pic1</button>
+                        <button class="photo" type="submit">Pic2</button>
+                        <button class="photo" type="submit">Pic3</button>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                      <div class="picr">
+                        <button class="photo" type="submit">Pic4</button>
+                        <button class="photo" type="submit">Pic5</button>
+                        <button class="photo" type="submit">Pic6</button>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                      <div class="picr">
+                        <button class="photo" type="submit">Pic7</button>
+                        <button class="photo" type="submit">Pic8</button>
+                        <button class="photo" type="submit">Pic9</button>
+                      </div>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 mb-sm-2 card-gap">
+          <div class="card my-card" style="height: 250px; background-color: #151B54;">
+            <div class="card-body pt-2">
+              <div class="upload-file">
+                <h6><span class="font-style">Data Name:2</span><span class="font-style" style="margin-left: 205px;">Add image</span></h6>
+              </div>
+              <hr class="hr-line">
+              <i class="fa fa-upload" aria-hidden="true" style="color: red;font-size: 70px;margin: 10px;"></i>
+              <div>
+                <span class="font-style" style="margin-left: 20px;">Upload</span>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="center-btn" id="AddNewUserOtpModal" style="margin-left: 695px;">Train Data</button>
+      <button type="submit" class="center-btn" id="AddNewUserOtpModal" style="height: 35px;width: 125px;margin-left: 708px;">Preview</button>
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+    <script>
+      var toggler = document.getElementsByClassName("caret");
+      var i;
+
+      for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+          this.parentElement.querySelector(".nested").classList.toggle("active");
+          this.classList.toggle("caret-down");
+        });
+      }
+    </script>
+
+  </body>
+</html>
