@@ -1,0 +1,10 @@
+{% for image in images %}
+  <div class=”item”>
+    <a href=”{{ url_for(‘recommend’, selectedImage=’’) }}{{image.name }}”>
+    <img src=”{{ url_for(‘static’, filename=’site_imgs/images/’) }}{{image.name}}” alt=”{{image.name}}” id=”showSimilarInPopup”>
+    <div class=”caption”>
+      {{image.caption}}
+    </div>
+    </a>
+  </div>
+{% endfor %}
